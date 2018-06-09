@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NumRanger</title>
+    <meta name="viewport" width="device-width" initial-scale="1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="content">
+        <h2>Sum all numbers in a range</h2>
+    </div>
+    <p>Want to find every leap year? How about every election year? Start with the last one, enter an end year, and choose 4
+        for the nth step. How about which years you'll be celebrating your dog's birthday? Maybe you could even calculate
+        the year the world will end! There are lots of other ways to use this simple app.</p>
+    <p>
+        Choose the starting and ending numbers for your range and, optionally, choose how you would like the program to 'step': I.E.
+        1 for every number, 2 for every other number, and so on.
+    </p>
+    <div class="content">
+        <form action="#" id="rangeForm">
+            <label for="start">Starting number</label>
+            <input type="text" name="start" id="start" placeholder=" Must be < ending value">
+            <label for="end">Ending number</label>
+            <input type="text" name="end" id="end" placeholder=" Must be > starting value">
+            <label for="step">Step (nth)</label>
+            <input type="text" name="step" id="step" placeholder=" Optional">
+            <button id="submitButton">Get Results</button>
+        </form>
+    </div>
+    <div id="container">
+
+        <div id="output">
+            <p>The result will be an array of numbers followed by the total of the range.</p>
+            <p>Example: [<span class="blue">1, 4, 7</span>] = <span class="red">12</span></p>
+        </div>
+    </div>
+    <footer>
+        <p><small>This app was built for chapter 4 of <a href="http://eloquentjavascript.net/ target='Eloquent Javascript'"><b>Eloquent Javascript</b></a>.
+            Many thanks to Marijn Haverbeke for writing this introduction to programming javascript.</small></p>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+
+</html>

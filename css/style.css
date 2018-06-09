@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Ubuntu');
+:root {
+        --radius: 8px;
+        --grey: #BCBCBC;
+        --red: #AC3535;
+        --blue: #4848Ac;
+        --white: #efefef;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.5em;
+        background-color: var(--white);
+    }
+    #container{
+        display: flex;
+        margin-top: 2em;
+    }
+    .content{
+        display: flex;
+    }
+    h2{
+        display: inline-flex;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    p{
+        margin: 1em 2em;
+    }
+    button{
+        border-radius: var(--radius);
+        height: 2em;
+        cursor: pointer;
+        font-size: .75em;
+        background-color: var(--blue);
+        color: var(--white);
+    }
+    button:focus{
+        outline: none;
+    }
+    .blue{
+        color: var(--blue);
+    }
+    .red {
+        color: var(--red);
+    }
+    div {
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #output{
+        max-width: 80%;
+        background-color: var(--grey);
+        color: black;
+        border-radius: var(--radius);
+        overflow-x: wrap;
+        padding: 8px;
+        z-index: 5;
+    }
+    a {
+        text-decoration: none;
+        color: var(--blue);
+    }
+    footer {
+        display: inline-flex;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        justify-content: center;
+        z-index: 10;
+    }
+    footer>p {
+        margin: 0;
+        background-color: var(--white);
+        border-radius: var(--radius);
+        opacity: 0.85;
+    }
+    input {
+        border-radius: var(--radius);
+        line-height: 2em;
+    }
